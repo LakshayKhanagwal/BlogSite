@@ -1,0 +1,196 @@
+:root {
+    --header-height: 7dvh;
+    --topic-width: 19dvw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: orange;
+    height: var(--header-height);
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.topic {
+    border-right: 2px solid black;
+    align-content: center;
+    font-size: x-large;
+    font-weight: 600;
+    height: 100%;
+    width: 10%;
+}
+
+.list {
+    background-color: transparent;
+    font-size: large;
+    font-weight: 550;
+    outline: unset;
+    border: unset;
+}
+
+.topic_name {
+    background-color: red;
+    width: var(--topic-width);
+    height: calc(100dvh - var(--header-height));
+    float: left;
+}
+
+.main_pannel {
+    /* background-color: green; */
+    height: calc(98dvh - var(--header-height));
+    padding-top: 2dvh;
+    padding-left: 1dvw;
+    overflow-y: scroll;
+    font-size: xx-large;
+}
+
+.cards {
+    float: left;
+    margin-right: 1dvw;
+    margin-bottom: 1dvw;
+    height: 9rem;
+    background-color: rgb(235, 235, 235);
+    width: 9rem;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(78, 78, 78);
+}
+
+.cards:hover {
+    border: 2px solid black;
+    background-color: rgb(226, 226, 226);
+    scale: 110%;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+.plus {
+    height: 60%;
+}
+
+.course_form {
+    position: absolute;
+    top: 0%;
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.527);
+}
+
+.course_form>div {
+    background-color: whitesmoke;
+    width: 31%;
+    border-radius: 1rem;
+    /* aspect-ratio: 40 / 20; */
+    padding-bottom: 1%;
+}
+
+.course_form>div>h2 {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    background-color: orange;
+    align-items: center;
+    padding-bottom: 1%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.course_form>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course_form>div>div>form {
+    width: 70%;
+}
+
+.course_form>div>div>form>label {
+    font-size: large;
+    padding-left: 1%;
+}
+
+.crose_X{
+    text-decoration: none;
+    position: absolute;
+    right: 36%;
+    color: rgb(48, 48, 48);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.crose_X:hover{
+    cursor: pointer;
+}
+
+.div_semesterpage{
+    display: flex;
+    justify-content: center;
+}
+
+.semester-heading{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.select-semesterpage{
+    width: 50%;
+    margin-top: 2%;
+    align-items: center;
+}
+
+.semester_label{
+    padding-left: 1%;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.click-here{
+    color: rgb(96, 178, 255);
+    font-weight: 500;
+}
+
+.click-here:hover{
+    color: rgb(51, 51, 255);
+    text-decoration: underline;
+    scale: 105%;
+    cursor: pointer;
+}
+
+.new-subject{
+    right: 0%;
+}
+
+.titles-aside{
+    background-color: green;
+    padding-left: 3%;
+    padding-right: 3%;
+    min-height: 5%;
+    width: 100%;
+    font-size: x-large;
+    align-items: center;
+    border-bottom:2px solid black ;
+    border-right:2px solid black ;
+}
+
+.titles-aside:hover{
+    cursor: pointer;
+    scale: 101%;
+}
+
+
+.titles-aside-shadow{
+    box-shadow: 2px 2px 2px black;
+    scale: 101%;
+    
+}
