@@ -10,7 +10,7 @@ const Newcourseform = () => {
     Subject: ''
   })
   function close_form() {
-    boolen_insert({...boolen_fetch,newcourse:false})
+    boolen_insert({ ...boolen_fetch, newcourse: false })
   }
 
   function data(e) {
@@ -26,7 +26,7 @@ const Newcourseform = () => {
           if (err) {
             alert('Some Internal Error Occured')
           } else {
-            boolen_insert({...boolen_fetch,newcourse:false})
+            boolen_insert({ ...boolen_fetch, newcourse: false })
           }
         })
         i++
